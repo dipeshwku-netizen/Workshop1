@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.cdnfonts.com/css/tex-gyre-pagella" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/tex-gyre-heros" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/aaaakshat/cm-web-fonts@latest/fonts.css" rel="stylesheet">
+<style>@keyframes dcGrad{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@keyframes dcBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+@keyframes dcDraw{from{stroke-dashoffset:30}to{stroke-dashoffset:0}}
+@keyframes dcRise{0%,100%{transform:translateY(0)}50%{transform:translate(-1px,-4px)}}
+@keyframes dcPop{0%{transform:scale(1) rotate(0)}40%{transform:scale(1.07) rotate(-3deg)}100%{transform:scale(1) rotate(0)}}
+@keyframes dcTilt{0%,100%{transform:rotate(0)}30%{transform:rotate(-9deg)}70%{transform:rotate(7deg)}}
+@keyframes dcTwinkle{0%,100%{transform:scale(1) rotate(0);opacity:1}50%{transform:scale(1.5) rotate(45deg);opacity:.55}}
+@keyframes dcPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.25)}}
+@keyframes dcSpin{0%{transform:scaleX(1)}50%{transform:scaleX(-1)}100%{transform:scaleX(1)}}
+html,body{margin:0;background:#1c1b19}a{color:#B5091F;text-decoration:none}a:hover{color:#1C1B19}</style>
+</helmet>
+<x-import component-from-global-scope="deck-stage" from="./deck-stage.js" width="1920" height="1080" hint-size="100%,100%">
+
+<section data-label="Title" data-screen-label="01 Title" data-speaker-notes="Welcome to the first GFCB AI Workshop: creating a professional website." style="background:#FFFFFF;overflow:hidden;font-family:'TeXGyrePagella','TeX Gyre Pagella','Palatino Linotype',Palatino,'Book Antiqua',serif;color:#1C1B19">
+  <img src="assets/building.png" alt="Chandler Hall illustration" style="position:absolute;left:385px;top:20px;width:1502px;height:693px;opacity:0.95">
+  <div style="position:absolute;left:382px;top:17px;width:456px;height:699px;background:linear-gradient(to right,#FFFFFF,rgba(255,255,255,0))"></div>
+  <div style="position:absolute;left:382px;top:577px;width:1508px;height:139px;background:linear-gradient(to bottom,rgba(255,255,255,0),#FFFFFF)"></div>
+
+  <div style="position:absolute;left:65px;bottom:840px;font-weight:700;font-size:111.6px;line-height:1;white-space:nowrap;color:#B5091F;text-box:trim-both cap alphabetic">GFCB AI</div>
+  <div style="position:absolute;left:65px;bottom:725px;font-weight:700;font-size:111.6px;line-height:1;white-space:nowrap;text-box:trim-both cap alphabetic">Workshop</div>
+  <div style="position:absolute;left:65px;bottom:609px;font-weight:700;font-size:111.6px;line-height:1;white-space:nowrap;text-box:trim-both cap alphabetic">Series</div>
+
+  <div style="position:absolute;left:0;top:580px;width:1920px;height:1.8px;background:#E4E2DF"></div>
+  <div style="position:absolute;left:956px;top:577px;width:8px;height:8px;border-radius:50%;background:#F6D9DE"></div>
+
+  <div style="position:absolute;left:73px;top:665px;width:46px;height:1.8px;border-radius:1px;background:#B5091F"></div>
+  <div style="position:absolute;left:134px;bottom:407px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:17.9px;letter-spacing:0.135em;line-height:1;white-space:nowrap;color:#B5091F;text-box:trim-both cap alphabetic">WORKSHOP 01</div>
+  <div style="position:absolute;left:74px;bottom:334px;font-weight:700;font-size:59.8px;line-height:1;white-space:nowrap;text-box:trim-both cap alphabetic">Creating a Professional Website</div>
+
+  <div style="position:absolute;left:1224px;top:652px;width:1.4px;height:266px;background:#E4E2DF"></div>
+
+  <div style="position:absolute;left:1292px;top:665px;width:46px;height:1.8px;border-radius:1px;background:#B5091F"></div>
+  <div style="position:absolute;left:1352px;bottom:407px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:17.9px;letter-spacing:0.135em;line-height:1;white-space:nowrap;color:#B5091F;text-box:trim-both cap alphabetic">PRESENTED BY</div>
+  <div style="position:absolute;left:1292px;bottom:340px;font-weight:700;font-size:33.9px;line-height:1;white-space:nowrap;text-box:trim-both cap alphabetic">GFCB AI Committee</div>
+  <div style="position:absolute;left:1292px;top:770px;width:554px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:24px;row-gap:16px">
+    <div style="display:flex;align-items:center;gap:14px"><div style="flex:none;width:14px;height:14px;border-radius:50%;background:#F6D9DE;display:flex;align-items:center;justify-content:center"><div style="width:5px;height:5px;border-radius:50%;background:#B5091F"></div></div><div style="font-size:26px;line-height:1.1;white-space:nowrap">Dipesh Bhattarai</div></div>
+    <div style="display:flex;align-items:center;gap:14px"><div style="flex:none;width:14px;height:14px;border-radius:50%;background:#F6D9DE;display:flex;align-items:center;justify-content:center"><div style="width:5px;height:5px;border-radius:50%;background:#B5091F"></div></div><div style="font-size:26px;line-height:1.1;white-space:nowrap">John Hostetter</div></div>
+    <div style="display:flex;align-items:center;gap:14px"><div style="flex:none;width:14px;height:14px;border-radius:50%;background:#F6D9DE;display:flex;align-items:center;justify-content:center"><div style="width:5px;height:5px;border-radius:50%;background:#B5091F"></div></div><div style="font-size:26px;line-height:1.1;white-space:nowrap">John Erickson</div></div>
+    <div style="display:flex;align-items:center;gap:14px"><div style="flex:none;width:14px;height:14px;border-radius:50%;background:#F6D9DE;display:flex;align-items:center;justify-content:center"><div style="width:5px;height:5px;border-radius:50%;background:#B5091F"></div></div><div style="font-size:26px;line-height:1.1;white-space:nowrap">Wu Tong</div></div>
+    <div style="display:flex;align-items:center;gap:14px"><div style="flex:none;width:14px;height:14px;border-radius:50%;background:#F6D9DE;display:flex;align-items:center;justify-content:center"><div style="width:5px;height:5px;border-radius:50%;background:#B5091F"></div></div><div style="font-size:26px;line-height:1.1;white-space:nowrap">Peter Lin</div></div>
+    <div style="display:flex;align-items:center;gap:14px"><div style="flex:none;width:14px;height:14px;border-radius:50%;background:#F6D9DE;display:flex;align-items:center;justify-content:center"><div style="width:5px;height:5px;border-radius:50%;background:#B5091F"></div></div><div style="font-size:26px;line-height:1.1;white-space:nowrap">Patricia Todd</div></div>
+    <div style="display:flex;align-items:center;gap:14px"><div style="flex:none;width:14px;height:14px;border-radius:50%;background:#F6D9DE;display:flex;align-items:center;justify-content:center"><div style="width:5px;height:5px;border-radius:50%;background:#B5091F"></div></div><div style="font-size:26px;line-height:1.1;white-space:nowrap">Mariah Yates</div></div>
+  </div>
+
+  <div style="position:absolute;left:0;top:1046px;width:1920px;height:34px;background:#B5091F"></div>
+  <div style="position:absolute;left:74px;bottom:10px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:19.9px;letter-spacing:0.08em;line-height:1;white-space:nowrap;color:#FFFFFF;text-box:trim-both cap alphabetic">GFCB AI WORKSHOP SERIES</div>
+  <div style="position:absolute;left:1326px;bottom:12px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:17.9px;line-height:1;white-space:nowrap;color:#FFFFFF;text-box:trim-both cap alphabetic">Gordon Ford College of Business · Western Kentucky University</div>
+</section>
+
+<section data-label="By the end" data-screen-label="02 By the end of this presentation" data-speaker-notes="Here is where we are going: a plain PDF CV on the left becomes a full academic website. Drag the handle to reveal it." style="background:#FFFFFF;overflow:hidden;font-family:'TeXGyrePagella','TeX Gyre Pagella','Palatino Linotype',Palatino,'Book Antiqua',serif;color:#1C1B19">
+  <div style="position:absolute;left:73px;top:110px;width:46px;height:1.8px;border-radius:1px;background:#B5091F"></div>
+  <div style="position:absolute;left:134px;bottom:963px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:17.9px;letter-spacing:0.135em;line-height:1;white-space:nowrap;color:#B5091F;text-box:trim-both cap alphabetic">WORKSHOP 01</div>
+  <div style="position:absolute;left:70px;bottom:868px;font-weight:700;font-size:76px;line-height:1;white-space:nowrap;text-box:trim-both cap alphabetic">By the end of this presentation</div>
+  <div style="position:absolute;left:0;top:250px;width:1920px;height:1.8px;background:#E4E2DF"></div>
+  <div style="position:absolute;left:956px;top:247px;width:8px;height:8px;border-radius:50%;background:#F6D9DE"></div>
+
+  <div style="position:absolute;left:74px;top:292px;display:flex;align-items:center;gap:14px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:17.9px;letter-spacing:0.135em;color:#B5091F;white-space:nowrap"><span>FROM</span><span style="color:#1C1B19">YOUR CV</span></div>
+  <div style="position:absolute;left:74px;top:322px;width:488px;height:690px;background:#FFFFFF;border:1px solid #E4E2DF;box-shadow:0 24px 50px -24px rgba(28,27,25,0.28);overflow:hidden">
+    <div style="width:595px;height:842px;transform:scale(0.8202);transform-origin:0 0;box-sizing:border-box;padding:0 29px;font-family:'Computer Modern Serif','Latin Modern Roman','CMU Serif',Georgia,serif;color:#000;font-size:10px;line-height:12px">
+      <div style="padding-top:29px;text-align:center;font-size:24.8px;line-height:28px">Dipesh Bhattarai</div>
+      <div style="margin-top:4px;text-align:center;font-size:12px;line-height:14px;display:flex;justify-content:center;gap:8px"><span style="color:#003399">dipesh.bhattarai@wku.edu</span><span>|</span><span>+1.662.352.3023</span><span>|</span><span style="color:#003399">Dipeshbhattarai.com</span><span>|</span><span style="color:#003399">Dipes08</span></div>
+      <div style="margin-top:14px;font-size:12px;line-height:14px;font-variant:small-caps;border-bottom:0.6px solid #000;padding-bottom:2px">Academic Appointments</div>
+      <div style="margin-top:9px;display:flex;justify-content:space-between"><span>Western Kentucky University, Gordon Ford College of Business</span><span>August 2024 - Present</span></div>
+      <div style="margin-top:16px;font-size:12px;line-height:14px;font-variant:small-caps;border-bottom:0.6px solid #000;padding-bottom:2px">Education</div>
+      <div style="margin-top:9px;display:flex;justify-content:space-between"><span>Ph.D. in Finance, University of Tennessee</span><span>May 2024</span></div>
+      <div style="display:flex;justify-content:space-between"><span>M.B.A, Mississippi State University</span><span>May 2018</span></div>
+      <div style="display:flex;justify-content:space-between"><span>B.B.A in Banking and Finance, Pokhara University</span><span>May 2016</span></div>
+      <div style="margin-top:16px;font-size:12px;line-height:14px;font-variant:small-caps;border-bottom:0.6px solid #000;padding-bottom:2px">Research Interests</div>
+      <div style="margin-top:9px">Corporate Governance, Shareholder Activism, Board of Directors, Machine Learning, Large Language Models</div>
+      <div style="margin-top:16px;font-size:12px;line-height:14px;font-variant:small-caps;border-bottom:0.6px solid #000;padding-bottom:2px">Working Papers</div>
+      <div style="margin-top:9px;font-weight:700">The Effect of Director Wealth on Corporate Governance and Firm Value</div>
+      <div style="margin:4px 0 0 18px;display:flex;flex-direction:column;gap:6px"><div>– 2024: Southwestern Finance Association, Research Symposium on Finance and Economics, Financial Management Association, Southern Finance Association</div><div>– 2023: Financial Management Association Doctoral Consortium, Neel Corporate Governance Research Forum</div></div>
+      <div style="margin-top:10px;font-weight:700">When Does Shareholder Communication Matter? Evidence from Proxy Exempt Solicitations</div>
+      <div>with Brian Blank, Kathryn M. Schumann, Tingting Liu, &amp; Tracie Woidtke</div>
+      <div style="margin:4px 0 0 18px;display:flex;flex-direction:column;gap:6px"><div>– 2023: Weinberg Center &amp; ECGI Corporate Governance Symposium* <i>- Best Paper Finalist</i>, The Financial Intermediation Research Society (FIRS)*</div><div>– 2022: Financial Management Association (FMA), SEC Seminar*, Neel Corporate Governance Seminar*, Mississippi State University*</div></div>
+      <div style="margin-top:10px;font-weight:700">Portable Director-Specific Quality</div>
+      <div>with Roy Schmardebeck, Matthew Serfling &amp; Tracie Woidtke</div>
+      <div style="margin:4px 0 0 18px;display:flex;flex-direction:column;gap:6px"><div>– 2023: Eastern Finance Association (EFA), Drexel Corporate Governance Conference</div><div>– 2022: Financial Management Association (FMA), Southern Finance Association (SFA), Financial Markets and Corporate Governance Conference (FMCG), Neel Corporate Governance Seminar, Washington State University*, Kent State University*, University of Kansas*</div></div>
+      <div style="margin-top:16px;font-size:12px;line-height:14px;font-variant:small-caps;border-bottom:0.6px solid #000;padding-bottom:2px">Other Conference Participation</div>
+      <div style="margin-top:9px;font-weight:700">Discussant</div>
+      <div style="margin:2px 0 0 18px;display:flex;flex-direction:column;gap:3px"><div>– 2024: Southwestern Finance Association, Research Symposium on Finance and Economics</div><div>– 2023: Eastern Finance Association (EFA)</div><div>– 2022: Financial Management Association Annual Meeting, Southern Financial Association Annual Meeting, Financial Market and Corporate Governance Annual Meeting</div></div>
+      <div style="margin-top:8px;font-weight:700">Session Chair</div>
+      <div style="margin:2px 0 0 18px;display:flex;flex-direction:column;gap:3px"><div>– 2023: Eastern Finance Association (EFA)</div><div>– 2022: Southern Financial Association</div></div>
+    </div>
+  </div>
+
+  <div style="position:absolute;left:578px;top:666px;width:118px;height:1.8px;background:#E4E2DF"></div>
+  <div style="position:absolute;left:694px;top:660px;width:0;height:0;border-top:7px solid transparent;border-bottom:7px solid transparent;border-left:11px solid #E4E2DF"></div>
+  <div style="position:absolute;left:607px;top:633px;width:64px;height:64px;box-sizing:border-box;border-radius:50%;background:#FFFFFF;border:1.8px solid #B5091F;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:24px;color:#B5091F">AI</div>
+
+  <div style="position:absolute;left:720px;top:292px;display:flex;align-items:center;gap:14px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:17.9px;letter-spacing:0.135em;color:#B5091F;white-space:nowrap"><span>TO</span><span style="color:#1C1B19">YOUR WEBSITE</span></div>
+  <div style="position:absolute;left:720px;top:322px;width:1126px;border:1px solid #E4E2DF;border-radius:12px;background:#FFFFFF">
+    <div style="height:46px;box-sizing:border-box;padding:0 18px;display:flex;align-items:center;gap:8px;background:#F4F2EF;border-bottom:1px solid #E4E2DF;border-radius:12px 12px 0 0">
+      <div style="width:12px;height:12px;border-radius:50%;background:#E4E2DF"></div>
+      <div style="width:12px;height:12px;border-radius:50%;background:#E4E2DF"></div>
+      <div style="width:12px;height:12px;border-radius:50%;background:#E4E2DF"></div>
+      <div style="margin-left:24px;flex:1;max-width:420px;height:26px;border-radius:13px;background:#FFFFFF;border:1px solid #E4E2DF;display:flex;align-items:center;padding:0 14px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;color:#5F6368">dipesh.design</div>
+    </div>
+    <div ref="{{ setArea }}" style="position:relative;width:1126px;height:643px;user-select:none">
+      <div style="position:absolute;inset:0;overflow:hidden;border-radius:0 0 12px 12px;background:#FAF8F5">
+        <img src="assets/website.png" alt="Dipesh Bhattarai academic website" draggable="false" style="position:absolute;left:0;top:0;display:block;width:1126px;height:auto;pointer-events:none">
+        <iframe src="https://dipesh.design" title="dipesh.design" style="position:absolute;left:0;top:0;width:1902px;height:1086px;border:0;transform:scale(0.592);transform-origin:0 0;background:transparent"></iframe>
+        <div onPointerDown="{{ onDown }}" onPointerMove="{{ onMove }}" onPointerUp="{{ onUp }}" onPointerCancel="{{ onUp }}" onDoubleClick="{{ onToggle }}" style="position:absolute;inset:0;background:#FAF8F5;clip-path:{{ coverClip }};cursor:ew-resize;touch-action:none">
+          <div style="position:absolute;left:5%;top:11%;width:22%;height:12%;border-radius:4px;background:#ECEAE6"></div>
+          <div style="position:absolute;left:5%;top:27%;width:27%;height:12%;border-radius:4px;background:#ECEAE6"></div>
+          <div style="position:absolute;left:5%;top:51%;width:18%;height:3.4%;border-radius:3px;background:#ECEAE6"></div>
+          <div style="position:absolute;left:5%;top:56.5%;width:18%;height:3.4%;border-radius:3px;background:#ECEAE6"></div>
+          <div style="position:absolute;left:5%;top:62%;width:15%;height:3.4%;border-radius:3px;background:#F6D9DE"></div>
+          <div style="position:absolute;left:5%;top:68.5%;width:10%;height:5.5%;border-radius:20px;background:#E4E2DF"></div>
+          <div style="position:absolute;left:16%;top:68.5%;width:7%;height:5.5%;border-radius:20px;border:1px solid #E4E2DF;box-sizing:border-box"></div>
+          <div style="position:absolute;left:64%;top:19%;width:19%;height:51%;border-radius:2px;background:#ECEAE6"></div>
+          <div style="position:absolute;left:0;right:0;bottom:0;height:22%;background:linear-gradient(to bottom,#FAF8F5,#F1EEEA)"></div>
+          <sc-if value="{{ showHint }}" hint-placeholder-val="{{ true }}">
+            <div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;align-items:center;gap:12px;padding:14px 26px;border-radius:40px;background:#1C1B19;color:#FFFFFF;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:18px;letter-spacing:0.08em;white-space:nowrap">DRAG TO REVEAL <span style="color:#F6D9DE">→</span></div>
+          </sc-if>
+        </div>
+      </div>
+      <div style="position:absolute;top:0;bottom:0;left:{{ handleLeft }};width:0">
+        <div onPointerDown="{{ onDown }}" onPointerMove="{{ onMove }}" onPointerUp="{{ onUp }}" onPointerCancel="{{ onUp }}" onDoubleClick="{{ onToggle }}" style="position:absolute;top:0;bottom:0;left:-12px;width:24px;cursor:ew-resize;touch-action:none"></div>
+        <div style="position:absolute;top:0;bottom:0;left:-1px;width:2px;background:#B5091F;pointer-events:none"></div>
+        <div onPointerDown="{{ onDown }}" onPointerMove="{{ onMove }}" onPointerUp="{{ onUp }}" onPointerCancel="{{ onUp }}" onDoubleClick="{{ onToggle }}" style="cursor:ew-resize;touch-action:none;position:absolute;top:50%;left:0;transform:translate(-50%,-50%);width:54px;height:54px;box-sizing:border-box;border-radius:50%;background:#FFFFFF;border:2px solid #B5091F;box-shadow:0 6px 18px rgba(28,27,25,0.22);display:flex;align-items:center;justify-content:center;gap:6px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:20px;color:#B5091F"><span>‹</span><span>›</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div style="position:absolute;left:0;top:1046px;width:1920px;height:34px;background:#B5091F"></div>
+  <div style="position:absolute;left:74px;bottom:10px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:19.9px;letter-spacing:0.08em;line-height:1;white-space:nowrap;color:#FFFFFF;text-box:trim-both cap alphabetic">GFCB AI WORKSHOP SERIES</div>
+  <div style="position:absolute;left:1326px;bottom:12px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:17.9px;line-height:1;white-space:nowrap;color:#FFFFFF;text-box:trim-both cap alphabetic">Gordon Ford College of Business · Western Kentucky University</div>
+</section>
+
+<section data-label="What you need" data-screen-label="03 What do you need" data-speaker-notes="Seven things to gather. The first five are required; background image, GitHub and a personal domain are optional." style="background:#FFFFFF;overflow:hidden;font-family:'TeXGyrePagella','TeX Gyre Pagella','Palatino Linotype',Palatino,'Book Antiqua',serif;color:#1C1B19">
+  <div style="position:absolute;left:73px;top:110px;width:46px;height:1.8px;border-radius:1px;background:#B5091F"></div>
+  <div style="position:absolute;left:134px;bottom:963px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:17.9px;letter-spacing:0.135em;line-height:1;white-space:nowrap;color:#B5091F;text-box:trim-both cap alphabetic">WORKSHOP 01</div>
+  <div style="position:absolute;left:70px;bottom:868px;font-weight:700;font-size:76px;line-height:1;white-space:nowrap;text-box:trim-both cap alphabetic">What do you need</div>
+  <div style="position:absolute;left:0;top:250px;width:1920px;height:1.8px;background:#E4E2DF"></div>
+  <div style="position:absolute;left:956px;top:247px;width:8px;height:8px;border-radius:50%;background:#F6D9DE"></div>
+
+  <div style="position:absolute;left:74px;top:581px;width:1772px;height:1.8px;background:#E4E2DF"></div>
+
+  <div style="position:absolute;left:74px;top:484px;width:1772px;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));font-family:'TeXGyrePagella','TeX Gyre Pagella','Palatino Linotype',Palatino,serif">
+    <div style="display:flex;flex-direction:column;align-items:center">
+      <div onMouseEnter="{{ enter1 }}" onMouseLeave="{{ leave }}" style="width:196px;height:196px;box-sizing:border-box;border-radius:50%;position:relative;background:transparent;border:2.5px solid #C98A93;display:flex;align-items:center;justify-content:center;cursor:default;transition:transform 0.35s cubic-bezier(.2,.8,.2,1),box-shadow 0.35s cubic-bezier(.2,.8,.2,1)" style-hover="transform:translateY(-6px) scale(1.04)"><div style="position:absolute;inset:0;border-radius:50%;background:linear-gradient(145deg,#FFFFFF 0%,#F6D9DE 55%,#EDB9C2 100%);animation:{{ sp1 }}"></div><div style="position:absolute;inset:0;border-radius:50%;pointer-events:none;background:linear-gradient(150deg,rgba(255,255,255,0.75) 0%,rgba(255,255,255,0) 38%,rgba(122,6,21,0) 62%,rgba(122,6,21,0.22) 100%)"></div><div style="position:absolute;inset:18px;border-radius:50%;pointer-events:none;background:radial-gradient(circle at 50% 35%,rgba(255,255,255,0.35) 0%,rgba(255,255,255,0) 70%);box-shadow:inset 0 9px 14px -2px rgba(122,6,21,0.38),inset 0 -6px 10px -2px rgba(255,255,255,0.9),inset 0 0 0 1px rgba(122,6,21,0.18),0 1.5px 0 rgba(255,255,255,0.95),0 -1.5px 0 rgba(122,6,21,0.22)"></div><svg width="88" height="88" viewBox="0 0 48 48" fill="none" stroke="#7A3B43" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" style="position:relative;overflow:visible"><g style="transform-box:fill-box;transform-origin:center;animation:{{ a1 }}"><path d="M12 6h17l9 9v27H12z"></path><path d="M29 6v9h9"></path><circle cx="21" cy="20" r="4"></circle><path d="M14.5 31c1.5-3.5 3.8-5 6.5-5s5 1.5 6.5 5"></path><path d="M17 37h16" style="stroke-dasharray:30;animation:{{ a1b }}"></path></g></svg></div>
+      <div style="margin-top:40px;max-width:220px;font-weight:700;font-size:36px;line-height:1.15;text-align:center;text-wrap:balance">Your CV / Resume</div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center">
+      <div onMouseEnter="{{ enter2 }}" onMouseLeave="{{ leave }}" style="width:196px;height:196px;box-sizing:border-box;border-radius:50%;position:relative;background:transparent;border:2.5px solid #C98A93;display:flex;align-items:center;justify-content:center;cursor:default;transition:transform 0.35s cubic-bezier(.2,.8,.2,1),box-shadow 0.35s cubic-bezier(.2,.8,.2,1)" style-hover="transform:translateY(-6px) scale(1.04)"><div style="position:absolute;inset:0;border-radius:50%;background:linear-gradient(145deg,#FFFFFF 0%,#F6D9DE 55%,#EDB9C2 100%);animation:{{ sp2 }}"></div><div style="position:absolute;inset:0;border-radius:50%;pointer-events:none;background:linear-gradient(150deg,rgba(255,255,255,0.75) 0%,rgba(255,255,255,0) 38%,rgba(122,6,21,0) 62%,rgba(122,6,21,0.22) 100%)"></div><div style="position:absolute;inset:18px;border-radius:50%;pointer-events:none;background:radial-gradient(circle at 50% 35%,rgba(255,255,255,0.35) 0%,rgba(255,255,255,0) 70%);box-shadow:inset 0 9px 14px -2px rgba(122,6,21,0.38),inset 0 -6px 10px -2px rgba(255,255,255,0.9),inset 0 0 0 1px rgba(122,6,21,0.18),0 1.5px 0 rgba(255,255,255,0.95),0 -1.5px 0 rgba(122,6,21,0.22)"></div><svg width="88" height="88" viewBox="0 0 48 48" fill="none" stroke="#7A3B43" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" style="position:relative;overflow:visible"><path d="M12 6h17l9 9v27H12z"></path><path d="M29 6v9h9"></path><path d="M17 22l2 2 4-4" style="stroke-dasharray:30;animation:{{ a2 }}"></path><path d="M27 22h6"></path><path d="M17 32l2 2 4-4" style="stroke-dasharray:30;animation:{{ a2b }}"></path><path d="M27 32h6"></path></svg></div>
+      <div style="margin-top:40px;max-width:220px;font-weight:700;font-size:36px;line-height:1.15;text-align:center;text-wrap:balance">Instruction file</div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center">
+      <div onMouseEnter="{{ enter3 }}" onMouseLeave="{{ leave }}" style="width:196px;height:196px;box-sizing:border-box;border-radius:50%;position:relative;background:transparent;border:2.5px dashed #C98A93;display:flex;align-items:center;justify-content:center;cursor:default;transition:transform 0.35s cubic-bezier(.2,.8,.2,1),box-shadow 0.35s cubic-bezier(.2,.8,.2,1)" style-hover="transform:translateY(-6px) scale(1.04)"><div style="position:absolute;inset:0;border-radius:50%;background:linear-gradient(145deg,#FFFFFF 0%,#FFFFFF 45%,#FBEFF1 100%);animation:{{ sp3 }}"></div><div style="position:absolute;inset:0;border-radius:50%;pointer-events:none;background:linear-gradient(150deg,rgba(255,255,255,0.75) 0%,rgba(255,255,255,0) 38%,rgba(28,27,25,0) 62%,rgba(28,27,25,0.1) 100%)"></div><div style="position:absolute;inset:18px;border-radius:50%;pointer-events:none;background:radial-gradient(circle at 50% 35%,rgba(255,255,255,0.35) 0%,rgba(255,255,255,0) 70%);box-shadow:inset 0 9px 14px -2px rgba(28,27,25,0.18),inset 0 -6px 10px -2px rgba(255,255,255,0.9),inset 0 0 0 1px rgba(28,27,25,0.1),0 1.5px 0 rgba(255,255,255,0.95),0 -1.5px 0 rgba(28,27,25,0.1)"></div><svg width="88" height="88" viewBox="0 0 48 48" fill="none" stroke="#1C1B19" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" style="position:relative;overflow:visible"><rect x="6" y="10" width="36" height="28" rx="3"></rect><circle cx="32" cy="19" r="3" style="transform-box:fill-box;transform-origin:center;animation:{{ a3 }}"></circle><path d="M6 33l10-10 9 9 5-5 12 12"></path></svg></div>
+      <div style="margin-top:40px;max-width:220px;font-weight:700;font-size:36px;line-height:1.15;text-align:center;text-wrap:balance">Background image</div>
+      <div style="margin-top:20px;padding:7px 14px;border:1.4px solid #E4E2DF;border-radius:20px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:17.9px;letter-spacing:0.135em;line-height:1;color:#1C1B19">OPTIONAL</div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center">
+      <div onMouseEnter="{{ enter4 }}" onMouseLeave="{{ leave }}" style="width:196px;height:196px;box-sizing:border-box;border-radius:50%;position:relative;background:transparent;border:2.5px solid #C98A93;display:flex;align-items:center;justify-content:center;cursor:default;transition:transform 0.35s cubic-bezier(.2,.8,.2,1),box-shadow 0.35s cubic-bezier(.2,.8,.2,1)" style-hover="transform:translateY(-6px) scale(1.04)"><div style="position:absolute;inset:0;border-radius:50%;background:linear-gradient(145deg,#FFFFFF 0%,#F6D9DE 55%,#EDB9C2 100%);animation:{{ sp4 }}"></div><div style="position:absolute;inset:0;border-radius:50%;pointer-events:none;background:linear-gradient(150deg,rgba(255,255,255,0.75) 0%,rgba(255,255,255,0) 38%,rgba(122,6,21,0) 62%,rgba(122,6,21,0.22) 100%)"></div><div style="position:absolute;inset:18px;border-radius:50%;pointer-events:none;background:radial-gradient(circle at 50% 35%,rgba(255,255,255,0.35) 0%,rgba(255,255,255,0) 70%);box-shadow:inset 0 9px 14px -2px rgba(122,6,21,0.38),inset 0 -6px 10px -2px rgba(255,255,255,0.9),inset 0 0 0 1px rgba(122,6,21,0.18),0 1.5px 0 rgba(255,255,255,0.95),0 -1.5px 0 rgba(122,6,21,0.22)"></div><svg width="88" height="88" viewBox="0 0 48 48" fill="none" stroke="#7A3B43" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" style="position:relative;overflow:visible"><g style="transform-box:fill-box;transform-origin:20% 100%;animation:{{ a4 }}"><path d="M8 7h32a3 3 0 0 1 3 3v21a3 3 0 0 1-3 3H22l-8 7v-7H8a3 3 0 0 1-3-3V10a3 3 0 0 1 3-3z"></path><rect x="11" y="13" width="10" height="14" rx="1"></rect><path d="M26 14h11" style="stroke-dasharray:30;animation:{{ a4b }}"></path><path d="M26 20h11" style="stroke-dasharray:30;animation:{{ a4c }}"></path><path d="M26 26h7" style="stroke-dasharray:30;animation:{{ a4d }}"></path></g></svg></div>
+      <div style="margin-top:40px;max-width:220px;font-weight:700;font-size:36px;line-height:1.15;text-align:center;text-wrap:balance">Sites from ChatGPT</div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center">
+      <div onMouseEnter="{{ enter5 }}" onMouseLeave="{{ leave }}" style="width:196px;height:196px;box-sizing:border-box;border-radius:50%;position:relative;background:transparent;border:2.5px solid #C98A93;display:flex;align-items:center;justify-content:center;cursor:default;transition:transform 0.35s cubic-bezier(.2,.8,.2,1),box-shadow 0.35s cubic-bezier(.2,.8,.2,1)" style-hover="transform:translateY(-6px) scale(1.04)"><div style="position:absolute;inset:0;border-radius:50%;background:linear-gradient(145deg,#FFFFFF 0%,#F6D9DE 55%,#EDB9C2 100%);animation:{{ sp5 }}"></div><div style="position:absolute;inset:0;border-radius:50%;pointer-events:none;background:linear-gradient(150deg,rgba(255,255,255,0.75) 0%,rgba(255,255,255,0) 38%,rgba(122,6,21,0) 62%,rgba(122,6,21,0.22) 100%)"></div><div style="position:absolute;inset:18px;border-radius:50%;pointer-events:none;background:radial-gradient(circle at 50% 35%,rgba(255,255,255,0.35) 0%,rgba(255,255,255,0) 70%);box-shadow:inset 0 9px 14px -2px rgba(122,6,21,0.38),inset 0 -6px 10px -2px rgba(255,255,255,0.9),inset 0 0 0 1px rgba(122,6,21,0.18),0 1.5px 0 rgba(255,255,255,0.95),0 -1.5px 0 rgba(122,6,21,0.22)"></div><svg width="88" height="88" viewBox="0 0 48 48" fill="none" stroke="#7A3B43" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" style="position:relative;overflow:visible"><g style="transform-box:fill-box;transform-origin:50% 100%;animation:{{ a5 }}"><path d="M13 27l11-19 11 19-11 13z"></path><path d="M24 8v13"></path><circle cx="24" cy="24" r="2.5"></circle></g><path d="M17 44h14" style="stroke-dasharray:30;animation:{{ a5c }}"></path><path d="M40 5v7M36.5 8.5h7" style="transform-box:fill-box;transform-origin:center;animation:{{ a5b }}"></path></svg></div>
+      <div style="margin-top:40px;max-width:220px;font-weight:700;font-size:36px;line-height:1.15;text-align:center;text-wrap:balance">Design from Claude</div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center">
+      <div onMouseEnter="{{ enter6 }}" onMouseLeave="{{ leave }}" style="width:196px;height:196px;box-sizing:border-box;border-radius:50%;position:relative;background:transparent;border:2.5px dashed #C98A93;display:flex;align-items:center;justify-content:center;cursor:default;transition:transform 0.35s cubic-bezier(.2,.8,.2,1),box-shadow 0.35s cubic-bezier(.2,.8,.2,1)" style-hover="transform:translateY(-6px) scale(1.04)"><div style="position:absolute;inset:0;border-radius:50%;background:linear-gradient(145deg,#FFFFFF 0%,#FFFFFF 45%,#FBEFF1 100%);animation:{{ sp6 }}"></div><div style="position:absolute;inset:0;border-radius:50%;pointer-events:none;background:linear-gradient(150deg,rgba(255,255,255,0.75) 0%,rgba(255,255,255,0) 38%,rgba(28,27,25,0) 62%,rgba(28,27,25,0.1) 100%)"></div><div style="position:absolute;inset:18px;border-radius:50%;pointer-events:none;background:radial-gradient(circle at 50% 35%,rgba(255,255,255,0.35) 0%,rgba(255,255,255,0) 70%);box-shadow:inset 0 9px 14px -2px rgba(28,27,25,0.18),inset 0 -6px 10px -2px rgba(255,255,255,0.9),inset 0 0 0 1px rgba(28,27,25,0.1),0 1.5px 0 rgba(255,255,255,0.95),0 -1.5px 0 rgba(28,27,25,0.1)"></div><svg width="88" height="88" viewBox="0 0 48 48" fill="none" stroke="#1C1B19" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" style="position:relative;overflow:visible"><circle cx="15" cy="10" r="4"></circle><circle cx="15" cy="38" r="4"></circle><circle cx="34" cy="17" r="4" style="transform-box:fill-box;transform-origin:center;animation:{{ a6b }}"></circle><path d="M15 14v20"></path><path d="M34 21c0 8-7 9-15.5 14" style="stroke-dasharray:30;animation:{{ a6 }}"></path></svg></div>
+      <div style="margin-top:40px;max-width:220px;font-weight:700;font-size:36px;line-height:1.15;text-align:center;text-wrap:balance">GitHub account</div>
+      <div style="margin-top:20px;padding:7px 14px;border:1.4px solid #E4E2DF;border-radius:20px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:17.9px;letter-spacing:0.135em;line-height:1;color:#1C1B19">OPTIONAL</div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center">
+      <div onMouseEnter="{{ enter7 }}" onMouseLeave="{{ leave }}" style="width:196px;height:196px;box-sizing:border-box;border-radius:50%;position:relative;background:transparent;border:2.5px dashed #C98A93;display:flex;align-items:center;justify-content:center;cursor:default;transition:transform 0.35s cubic-bezier(.2,.8,.2,1),box-shadow 0.35s cubic-bezier(.2,.8,.2,1)" style-hover="transform:translateY(-6px) scale(1.04)"><div style="position:absolute;inset:0;border-radius:50%;background:linear-gradient(145deg,#FFFFFF 0%,#FFFFFF 45%,#FBEFF1 100%);animation:{{ sp7 }}"></div><div style="position:absolute;inset:0;border-radius:50%;pointer-events:none;background:linear-gradient(150deg,rgba(255,255,255,0.75) 0%,rgba(255,255,255,0) 38%,rgba(28,27,25,0) 62%,rgba(28,27,25,0.1) 100%)"></div><div style="position:absolute;inset:18px;border-radius:50%;pointer-events:none;background:radial-gradient(circle at 50% 35%,rgba(255,255,255,0.35) 0%,rgba(255,255,255,0) 70%);box-shadow:inset 0 9px 14px -2px rgba(28,27,25,0.18),inset 0 -6px 10px -2px rgba(255,255,255,0.9),inset 0 0 0 1px rgba(28,27,25,0.1),0 1.5px 0 rgba(255,255,255,0.95),0 -1.5px 0 rgba(28,27,25,0.1)"></div><svg width="88" height="88" viewBox="0 0 48 48" fill="none" stroke="#1C1B19" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" style="position:relative;overflow:visible"><circle cx="24" cy="24" r="17"></circle><ellipse cx="24" cy="24" rx="7" ry="17" style="transform-box:fill-box;transform-origin:center;animation:{{ a7 }}"></ellipse><path d="M7 24h34M10 15h28M10 33h28"></path></svg></div>
+      <div style="margin-top:40px;max-width:220px;font-weight:700;font-size:36px;line-height:1.15;text-align:center;text-wrap:balance">Personal domain</div>
+      <div style="margin-top:20px;padding:7px 14px;border:1.4px solid #E4E2DF;border-radius:20px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:17.9px;letter-spacing:0.135em;line-height:1;color:#1C1B19">OPTIONAL</div>
+    </div>
+  </div>
+
+  <div style="position:absolute;left:0;top:1046px;width:1920px;height:34px;background:#B5091F"></div>
+  <div style="position:absolute;left:74px;bottom:10px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:19.9px;letter-spacing:0.08em;line-height:1;white-space:nowrap;color:#FFFFFF;text-box:trim-both cap alphabetic">GFCB AI WORKSHOP SERIES</div>
+  <div style="position:absolute;left:1326px;bottom:12px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:17.9px;line-height:1;white-space:nowrap;color:#FFFFFF;text-box:trim-both cap alphabetic">Gordon Ford College of Business · Western Kentucky University</div>
+</section>
+
+<section data-label="Roadmap: Sites" data-screen-label="04 Roadmap ChatGPT Sites" data-speaker-notes="Three inputs go into ChatGPT Sites, which builds and hosts the website. For a custom address, connect a personal domain." style="background:#FFFFFF;overflow:hidden;font-family:'TeXGyrePagella','TeX Gyre Pagella','Palatino Linotype',Palatino,'Book Antiqua',serif;color:#1C1B19">
+  <div style="position:absolute;left:73px;top:110px;width:46px;height:1.8px;border-radius:1px;background:#B5091F"></div>
+  <div style="position:absolute;left:134px;bottom:963px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:17.9px;letter-spacing:0.135em;line-height:1;white-space:nowrap;color:#B5091F;text-box:trim-both cap alphabetic">ROADMAP</div>
+  <div style="position:absolute;left:70px;bottom:868px;font-weight:700;font-size:76px;line-height:1;white-space:nowrap;text-box:trim-both cap alphabetic">From inputs to a live website <span style="color:#B5091F">(ChatGPT Sites)</span></div>
+  <div style="position:absolute;left:0;top:250px;width:1920px;height:1.8px;background:#E4E2DF"></div>
+  <div style="position:absolute;left:956px;top:247px;width:8px;height:8px;border-radius:50%;background:#F6D9DE"></div>
+
+  <div style="position:absolute;left:74px;top:292px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:17.9px;letter-spacing:0.135em;color:#B5091F;white-space:nowrap">INPUTS</div>
+  <div style="position:absolute;left:760px;top:292px;width:440px;text-align:center;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:17.9px;letter-spacing:0.135em;color:#B5091F;white-space:nowrap">BUILD + HOST</div>
+  <div style="position:absolute;left:1230px;top:292px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:17.9px;letter-spacing:0.135em;color:#B5091F;white-space:nowrap">YOUR WEBSITE</div>
+
+  <svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" style="position:absolute;left:0;top:0;pointer-events:none">
+    <path d="M556 450 C720 450 700 640 860 640" stroke="#E4E2DF" stroke-width="2.5" stroke-linecap="round"></path>
+    <path d="M556 640 L860 640" stroke="#E4E2DF" stroke-width="2.5" stroke-linecap="round"></path>
+    <path d="M556 830 C720 830 700 640 860 640" stroke="#E4E2DF" stroke-width="2.5" stroke-linecap="round"></path>
+    <path d="M1100 640 C1170 640 1160 492 1230 492" stroke="#E4E2DF" stroke-width="2.5" stroke-linecap="round"></path>
+    <path d="M1296 814 L1296 656" stroke="#E4E2DF" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="6 9"></path>
+  </svg>
+  {{ flow }}
+
+  <div style="position:absolute;left:74px;top:384px;width:132px;height:132px;box-sizing:border-box;border-radius:50%;border:2.5px solid #C98A93;display:flex;align-items:center;justify-content:center">
+    <div style="position:absolute;inset:0;border-radius:50%;background:linear-gradient(145deg,#FFFFFF 0%,#F6D9DE 55%,#EDB9C2 100%);animation:{{ inSpin }}"></div>
+    <div style="position:absolute;inset:0;border-radius:50%;background:linear-gradient(150deg,rgba(255,255,255,0.75) 0%,rgba(255,255,255,0) 38%,rgba(122,6,21,0) 62%,rgba(122,6,21,0.22) 100%)"></div>
+    <div style="position:absolute;inset:12px;border-radius:50%;background:radial-gradient(circle at 50% 35%,rgba(255,255,255,0.35) 0%,rgba(255,255,255,0) 70%);box-shadow:inset 0 7px 11px -2px rgba(122,6,21,0.38),inset 0 -5px 8px -2px rgba(255,255,255,0.9),inset 0 0 0 1px rgba(122,6,21,0.18),0 1.5px 0 rgba(255,255,255,0.95),0 -1.5px 0 rgba(122,6,21,0.22)"></div>
+    <svg width="60" height="60" viewBox="0 0 48 48" fill="none" stroke="#7A3B43" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" style="position:relative"><path d="M12 6h17l9 9v27H12z"></path><path d="M29 6v9h9"></path><circle cx="21" cy="20" r="4"></circle><path d="M14.5 31c1.5-3.5 3.8-5 6.5-5s5 1.5 6.5 5"></path><path d="M17 37h16"></path></svg>
+  </div>
+  <div style="position:absolute;left:236px;top:450px;transform:translateY(-50%);font-weight:700;font-size:36px;line-height:1.1;white-space:nowrap">Your CV</div>
+
+  <div style="position:absolute;left:74px;top:574px;width:132px;height:132px;box-sizing:border-box;border-radius:50%;border:2.5px solid #C98A93;display:flex;align-items:center;justify-content:center">
+    <div style="position:absolute;inset:0;border-radius:50%;background:linear-gradient(145deg,#FFFFFF 0%,#F6D9DE 55%,#EDB9C2 100%);animation:{{ inSpin }}"></div>
+    <div style="position:absolute;inset:0;border-radius:50%;background:linear-gradient(150deg,rgba(255,255,255,0.75) 0%,rgba(255,255,255,0) 38%,rgba(122,6,21,0) 62%,rgba(122,6,21,0.22) 100%)"></div>
+    <div style="position:absolute;inset:12px;border-radius:50%;background:radial-gradient(circle at 50% 35%,rgba(255,255,255,0.35) 0%,rgba(255,255,255,0) 70%);box-shadow:inset 0 7px 11px -2px rgba(122,6,21,0.38),inset 0 -5px 8px -2px rgba(255,255,255,0.9),inset 0 0 0 1px rgba(122,6,21,0.18),0 1.5px 0 rgba(255,255,255,0.95),0 -1.5px 0 rgba(122,6,21,0.22)"></div>
+    <svg width="60" height="60" viewBox="0 0 48 48" fill="none" stroke="#7A3B43" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" style="position:relative"><path d="M12 6h17l9 9v27H12z"></path><path d="M29 6v9h9"></path><path d="M17 22l2 2 4-4"></path><path d="M27 22h6"></path><path d="M17 32l2 2 4-4"></path><path d="M27 32h6"></path></svg>
+  </div>
+  <div style="position:absolute;left:236px;top:640px;transform:translateY(-50%);font-weight:700;font-size:36px;line-height:1.1;white-space:nowrap">Instruction file</div>
+
+  <div style="position:absolute;left:74px;top:764px;width:132px;height:132px;box-sizing:border-box;border-radius:50%;border:2.5px dashed #C98A93;display:flex;align-items:center;justify-content:center">
+    <div style="position:absolute;inset:0;border-radius:50%;background:linear-gradient(145deg,#FFFFFF 0%,#FFFFFF 45%,#FBEFF1 100%);animation:{{ inSpin }}"></div>
+    <div style="position:absolute;inset:0;border-radius:50%;background:linear-gradient(150deg,rgba(255,255,255,0.75) 0%,rgba(255,255,255,0) 38%,rgba(28,27,25,0) 62%,rgba(28,27,25,0.1) 100%)"></div>
+    <div style="position:absolute;inset:12px;border-radius:50%;background:radial-gradient(circle at 50% 35%,rgba(255,255,255,0.35) 0%,rgba(255,255,255,0) 70%);box-shadow:inset 0 7px 11px -2px rgba(28,27,25,0.18),inset 0 -5px 8px -2px rgba(255,255,255,0.9),inset 0 0 0 1px rgba(28,27,25,0.1),0 1.5px 0 rgba(255,255,255,0.95),0 -1.5px 0 rgba(28,27,25,0.1)"></div>
+    <svg width="60" height="60" viewBox="0 0 48 48" fill="none" stroke="#1C1B19" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" style="position:relative"><rect x="6" y="10" width="36" height="28" rx="3"></rect><circle cx="32" cy="19" r="3"></circle><path d="M6 33l10-10 9 9 5-5 12 12"></path></svg>
+  </div>
+  <div style="position:absolute;left:236px;top:830px;transform:translateY(-50%);display:flex;flex-direction:column;align-items:flex-start;gap:12px">
+    <div style="font-weight:700;font-size:36px;line-height:1.1;white-space:nowrap">Background image</div>
+    <div style="padding:7px 14px;border:1.4px solid #E4E2DF;border-radius:20px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:17.9px;letter-spacing:0.135em;line-height:1;color:#1C1B19">OPTIONAL</div>
+  </div>
+
+  <div style="position:absolute;left:846px;top:506px;width:268px;height:268px;box-sizing:border-box;border-radius:50%;border:2px solid #F6D9DE;opacity:{{ hubGlow }};transform:scale({{ hubGlowScale }});transition:opacity 0.6s ease,transform 0.6s cubic-bezier(.2,.8,.2,1)"></div>
+  <div style="position:absolute;left:860px;top:520px;width:240px;height:240px;box-sizing:border-box;border-radius:50%;border:3px solid #C98A93;display:flex;align-items:center;justify-content:center">
+    <div style="position:absolute;inset:0;border-radius:50%;background:linear-gradient(145deg,#FFFFFF 0%,#F6D9DE 55%,#EDB9C2 100%);animation:{{ hubSpin }}"></div>
+    <div style="position:absolute;inset:0;border-radius:50%;background:linear-gradient(150deg,rgba(255,255,255,0.75) 0%,rgba(255,255,255,0) 38%,rgba(122,6,21,0) 62%,rgba(122,6,21,0.22) 100%)"></div>
+    <div style="position:absolute;inset:22px;border-radius:50%;background:radial-gradient(circle at 50% 35%,rgba(255,255,255,0.35) 0%,rgba(255,255,255,0) 70%);box-shadow:inset 0 11px 16px -2px rgba(122,6,21,0.38),inset 0 -7px 12px -2px rgba(255,255,255,0.9),inset 0 0 0 1px rgba(122,6,21,0.18),0 1.5px 0 rgba(255,255,255,0.95),0 -1.5px 0 rgba(122,6,21,0.22)"></div>
+    <svg width="110" height="110" viewBox="0 0 48 48" fill="none" stroke="#7A3B43" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" style="position:relative"><path d="M8 7h32a3 3 0 0 1 3 3v21a3 3 0 0 1-3 3H22l-8 7v-7H8a3 3 0 0 1-3-3V10a3 3 0 0 1 3-3z"></path><rect x="11" y="13" width="10" height="14" rx="1"></rect><path d="M26 14h11M26 20h11M26 26h7"></path></svg>
+  </div>
+  <div style="position:absolute;left:760px;top:796px;width:440px;display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center">
+    <div style="font-weight:700;font-size:44px;line-height:1.1;white-space:nowrap">ChatGPT Sites</div>
+    <div style="font-size:26px;line-height:1.25;color:#5F5B55">Builds and hosts your site</div>
+  </div>
+
+  <div style="position:absolute;left:1230px;top:330px;width:616px;border:1px solid #E4E2DF;border-radius:10px;background:#FFFFFF;box-shadow:0 26px 50px -24px rgba(28,27,25,0.32)">
+    <div style="height:40px;box-sizing:border-box;padding:0 14px;display:flex;align-items:center;gap:7px;background:#F4F2EF;border-bottom:1px solid #E4E2DF;border-radius:10px 10px 0 0">
+      <div style="width:10px;height:10px;border-radius:50%;background:#E4E2DF"></div>
+      <div style="width:10px;height:10px;border-radius:50%;background:#E4E2DF"></div>
+      <div style="width:10px;height:10px;border-radius:50%;background:#E4E2DF"></div>
+      <div style="margin-left:16px;flex:1;position:relative;height:24px;border-radius:12px;background:#FFFFFF;border:1px solid #E4E2DF;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:15px;line-height:24px">
+        <div style="position:absolute;left:14px;top:0;color:#8A867F;white-space:nowrap;opacity:{{ urlA }};transition:opacity 0.4s ease">your-free-link · hosted by ChatGPT Sites</div>
+        <div style="position:absolute;left:14px;top:0;color:#1C1B19;font-weight:700;white-space:nowrap;opacity:{{ urlB }};transition:opacity 0.4s ease">dipesh.design</div>
+      </div>
+    </div>
+    <div style="position:relative;width:616px;height:284px;overflow:hidden;border-radius:0 0 10px 10px;background:#FAF8F5">
+      <div style="position:absolute;left:5%;top:11%;width:22%;height:12%;border-radius:3px;background:#ECEAE6"></div>
+      <div style="position:absolute;left:5%;top:27%;width:27%;height:12%;border-radius:3px;background:#ECEAE6"></div>
+      <div style="position:absolute;left:5%;top:51%;width:18%;height:3.4%;border-radius:2px;background:#ECEAE6"></div>
+      <div style="position:absolute;left:5%;top:56.5%;width:18%;height:3.4%;border-radius:2px;background:#ECEAE6"></div>
+      <div style="position:absolute;left:5%;top:62%;width:15%;height:3.4%;border-radius:2px;background:#F6D9DE"></div>
+      <div style="position:absolute;left:64%;top:19%;width:19%;height:51%;border-radius:2px;background:#ECEAE6"></div>
+      <img src="assets/website.png" alt="Generated academic website" style="position:absolute;left:0;top:0;width:616px;height:auto;display:block;opacity:{{ siteOn }};transform:scale({{ siteScale }});transform-origin:50% 50%;transition:opacity 0.7s ease,transform 0.9s cubic-bezier(.2,.8,.2,1)">
+    </div>
+  </div>
+
+  <div style="position:absolute;left:1230px;top:814px;width:132px;height:132px;box-sizing:border-box;border-radius:50%;border:2.5px dashed #C98A93;display:flex;align-items:center;justify-content:center">
+    <div style="position:absolute;inset:0;border-radius:50%;background:linear-gradient(145deg,#FFFFFF 0%,#FFFFFF 45%,#FBEFF1 100%);animation:{{ domSpin }}"></div>
+    <div style="position:absolute;inset:0;border-radius:50%;background:linear-gradient(150deg,rgba(255,255,255,0.75) 0%,rgba(255,255,255,0) 38%,rgba(28,27,25,0) 62%,rgba(28,27,25,0.1) 100%)"></div>
+    <div style="position:absolute;inset:12px;border-radius:50%;background:radial-gradient(circle at 50% 35%,rgba(255,255,255,0.35) 0%,rgba(255,255,255,0) 70%);box-shadow:inset 0 7px 11px -2px rgba(28,27,25,0.18),inset 0 -5px 8px -2px rgba(255,255,255,0.9),inset 0 0 0 1px rgba(28,27,25,0.1),0 1.5px 0 rgba(255,255,255,0.95),0 -1.5px 0 rgba(28,27,25,0.1)"></div>
+    <svg width="60" height="60" viewBox="0 0 48 48" fill="none" stroke="#1C1B19" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" style="position:relative"><circle cx="24" cy="24" r="17"></circle><ellipse cx="24" cy="24" rx="7" ry="17"></ellipse><path d="M7 24h34M10 15h28M10 33h28"></path></svg>
+  </div>
+  <div style="position:absolute;left:1392px;top:880px;transform:translateY(-50%);display:flex;flex-direction:column;align-items:flex-start;gap:12px">
+    <div style="font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:17.9px;letter-spacing:0.135em;line-height:1;color:#B5091F;white-space:nowrap">FOR A CUSTOM ADDRESS</div>
+    <div style="font-weight:700;font-size:36px;line-height:1.1;white-space:nowrap">Connect a personal domain</div>
+    <div style="font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:24px;line-height:1;color:#5F5B55;white-space:nowrap">e.g. dipesh.design</div>
+  </div>
+
+  <div style="position:absolute;left:0;top:1046px;width:1920px;height:34px;background:#B5091F"></div>
+  <div style="position:absolute;left:74px;bottom:10px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:19.9px;letter-spacing:0.08em;line-height:1;white-space:nowrap;color:#FFFFFF;text-box:trim-both cap alphabetic">GFCB AI WORKSHOP SERIES</div>
+  <div style="position:absolute;left:1326px;bottom:12px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:17.9px;line-height:1;white-space:nowrap;color:#FFFFFF;text-box:trim-both cap alphabetic">Gordon Ford College of Business · Western Kentucky University</div>
+</section>
+
+<section data-label="Roadmap: Claude" data-screen-label="05 Roadmap Claude Design" data-speaker-notes="Same three inputs go into Claude Design. It produces the website, shareable as an artifact. For a custom address you need a host: publish on GitHub Pages, then connect a personal domain." style="background:#FFFFFF;overflow:hidden;font-family:'TeXGyrePagella','TeX Gyre Pagella','Palatino Linotype',Palatino,'Book Antiqua',serif;color:#1C1B19">
+  <div style="position:absolute;left:73px;top:110px;width:46px;height:1.8px;border-radius:1px;background:#B5091F"></div>
+  <div style="position:absolute;left:134px;bottom:963px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:17.9px;letter-spacing:0.135em;line-height:1;white-space:nowrap;color:#B5091F;text-box:trim-both cap alphabetic">ROADMAP · CLAUDE</div>
+  <div style="position:absolute;left:70px;bottom:868px;font-weight:700;font-size:76px;line-height:1;white-space:nowrap;text-box:trim-both cap alphabetic">From inputs to a live website <span style="color:#B5091F">(Claude Design)</span></div>
+  <div style="position:absolute;left:0;top:250px;width:1920px;height:1.8px;background:#E4E2DF"></div>
+  <div style="position:absolute;left:956px;top:247px;width:8px;height:8px;border-radius:50%;background:#F6D9DE"></div>
+
+  <div style="position:absolute;left:74px;top:292px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:17.9px;letter-spacing:0.135em;color:#B5091F;white-space:nowrap">INPUTS</div>
+  <div style="position:absolute;left:760px;top:292px;width:440px;text-align:center;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:17.9px;letter-spacing:0.135em;color:#B5091F;white-space:nowrap">DESIGN</div>
+  <div style="position:absolute;left:1230px;top:292px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:17.9px;letter-spacing:0.135em;color:#B5091F;white-space:nowrap">YOUR WEBSITE</div>
+
+  <svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" style="position:absolute;left:0;top:0;pointer-events:none">
+    <path d="M556 450 C720 450 700 640 860 640" stroke="#E4E2DF" stroke-width="2.5" stroke-linecap="round"></path>
+    <path d="M556 640 L860 640" stroke="#E4E2DF" stroke-width="2.5" stroke-linecap="round"></path>
+    <path d="M556 830 C720 830 700 640 860 640" stroke="#E4E2DF" stroke-width="2.5" stroke-linecap="round"></path>
+    <path d="M1100 640 C1170 640 1160 492 1230 492" stroke="#E4E2DF" stroke-width="2.5" stroke-linecap="round"></path>
+    <path d="M1340 656 L1340 760" stroke="#E4E2DF" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="6 9"></path>
+    <path d="M1400 820 L1640 820" stroke="#E4E2DF" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="6 9"></path>
+  </svg>
+  {{ flow5 }}
+
+  <div style="position:absolute;left:74px;top:384px;width:132px;height:132px;box-sizing:border-box;border-radius:50%;border:2.5px solid #C98A93;display:flex;align-items:center;justify-content:center">
+    <div style="position:absolute;inset:0;border-radius:50%;background:linear-gradient(145deg,#FFFFFF 0%,#F6D9DE 55%,#EDB9C2 100%);animation:{{ inSpin5 }}"></div>
+    <div style="position:absolute;inset:0;border-radius:50%;background:linear-gradient(150deg,rgba(255,255,255,0.75) 0%,rgba(255,255,255,0) 38%,rgba(122,6,21,0) 62%,rgba(122,6,21,0.22) 100%)"></div>
+    <div style="position:absolute;inset:12px;border-radius:50%;background:radial-gradient(circle at 50% 35%,rgba(255,255,255,0.35) 0%,rgba(255,255,255,0) 70%);box-shadow:inset 0 7px 11px -2px rgba(122,6,21,0.38),inset 0 -5px 8px -2px rgba(255,255,255,0.9),inset 0 0 0 1px rgba(122,6,21,0.18),0 1.5px 0 rgba(255,255,255,0.95),0 -1.5px 0 rgba(122,6,21,0.22)"></div>
+    <svg width="60" height="60" viewBox="0 0 48 48" fill="none" stroke="#7A3B43" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" style="position:relative"><path d="M12 6h17l9 9v27H12z"></path><path d="M29 6v9h9"></path><circle cx="21" cy="20" r="4"></circle><path d="M14.5 31c1.5-3.5 3.8-5 6.5-5s5 1.5 6.5 5"></path><path d="M17 37h16"></path></svg>
+  </div>
+  <div style="position:absolute;left:236px;top:450px;transform:translateY(-50%);font-weight:700;font-size:36px;line-height:1.1;white-space:nowrap">Your CV</div>
+
+  <div style="position:absolute;left:74px;top:574px;width:132px;height:132px;box-sizing:border-box;border-radius:50%;border:2.5px solid #C98A93;display:flex;align-items:center;justify-content:center">
+    <div style="position:absolute;inset:0;border-radius:50%;background:linear-gradient(145deg,#FFFFFF 0%,#F6D9DE 55%,#EDB9C2 100%);animation:{{ inSpin5 }}"></div>
+    <div style="position:absolute;inset:0;border-radius:50%;background:linear-gradient(150deg,rgba(255,255,255,0.75) 0%,rgba(255,255,255,0) 38%,rgba(122,6,21,0) 62%,rgba(122,6,21,0.22) 100%)"></div>
+    <div style="position:absolute;inset:12px;border-radius:50%;background:radial-gradient(circle at 50% 35%,rgba(255,255,255,0.35) 0%,rgba(255,255,255,0) 70%);box-shadow:inset 0 7px 11px -2px rgba(122,6,21,0.38),inset 0 -5px 8px -2px rgba(255,255,255,0.9),inset 0 0 0 1px rgba(122,6,21,0.18),0 1.5px 0 rgba(255,255,255,0.95),0 -1.5px 0 rgba(122,6,21,0.22)"></div>
+    <svg width="60" height="60" viewBox="0 0 48 48" fill="none" stroke="#7A3B43" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" style="position:relative"><path d="M12 6h17l9 9v27H12z"></path><path d="M29 6v9h9"></path><path d="M17 22l2 2 4-4"></path><path d="M27 22h6"></path><path d="M17 32l2 2 4-4"></path><path d="M27 32h6"></path></svg>
+  </div>
+  <div style="position:absolute;left:236px;top:640px;transform:translateY(-50%);font-weight:700;font-size:36px;line-height:1.1;white-space:nowrap">Instruction file</div>
+
+  <div style="position:absolute;left:74px;top:764px;width:132px;height:132px;box-sizing:border-box;border-radius:50%;border:2.5px dashed #C98A93;display:flex;align-items:center;justify-content:center">
+    <div style="position:absolute;inset:0;border-radius:50%;background:linear-gradient(145deg,#FFFFFF 0%,#FFFFFF 45%,#FBEFF1 100%);animation:{{ inSpin5 }}"></div>
+    <div style="position:absolute;inset:0;border-radius:50%;background:linear-gradient(150deg,rgba(255,255,255,0.75) 0%,rgba(255,255,255,0) 38%,rgba(28,27,25,0) 62%,rgba(28,27,25,0.1) 100%)"></div>
+    <div style="position:absolute;inset:12px;border-radius:50%;background:radial-gradient(circle at 50% 35%,rgba(255,255,255,0.35) 0%,rgba(255,255,255,0) 70%);box-shadow:inset 0 7px 11px -2px rgba(28,27,25,0.18),inset 0 -5px 8px -2px rgba(255,255,255,0.9),inset 0 0 0 1px rgba(28,27,25,0.1),0 1.5px 0 rgba(255,255,255,0.95),0 -1.5px 0 rgba(28,27,25,0.1)"></div>
+    <svg width="60" height="60" viewBox="0 0 48 48" fill="none" stroke="#1C1B19" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" style="position:relative"><rect x="6" y="10" width="36" height="28" rx="3"></rect><circle cx="32" cy="19" r="3"></circle><path d="M6 33l10-10 9 9 5-5 12 12"></path></svg>
+  </div>
+  <div style="position:absolute;left:236px;top:830px;transform:translateY(-50%);display:flex;flex-direction:column;align-items:flex-start;gap:12px">
+    <div style="font-weight:700;font-size:36px;line-height:1.1;white-space:nowrap">Background image</div>
+    <div style="padding:7px 14px;border:1.4px solid #E4E2DF;border-radius:20px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:17.9px;letter-spacing:0.135em;line-height:1;color:#1C1B19">OPTIONAL</div>
+  </div>
+
+  <div style="position:absolute;left:846px;top:506px;width:268px;height:268px;box-sizing:border-box;border-radius:50%;border:2px solid #F6D9DE;opacity:{{ hubGlow5 }};transform:scale({{ hubGlowScale5 }});transition:opacity 0.6s ease,transform 0.6s cubic-bezier(.2,.8,.2,1)"></div>
+  <div style="position:absolute;left:860px;top:520px;width:240px;height:240px;box-sizing:border-box;border-radius:50%;border:3px solid #C98A93;display:flex;align-items:center;justify-content:center">
+    <div style="position:absolute;inset:0;border-radius:50%;background:linear-gradient(145deg,#FFFFFF 0%,#F6D9DE 55%,#EDB9C2 100%);animation:{{ hubSpin5 }}"></div>
+    <div style="position:absolute;inset:0;border-radius:50%;background:linear-gradient(150deg,rgba(255,255,255,0.75) 0%,rgba(255,255,255,0) 38%,rgba(122,6,21,0) 62%,rgba(122,6,21,0.22) 100%)"></div>
+    <div style="position:absolute;inset:22px;border-radius:50%;background:radial-gradient(circle at 50% 35%,rgba(255,255,255,0.35) 0%,rgba(255,255,255,0) 70%);box-shadow:inset 0 11px 16px -2px rgba(122,6,21,0.38),inset 0 -7px 12px -2px rgba(255,255,255,0.9),inset 0 0 0 1px rgba(122,6,21,0.18),0 1.5px 0 rgba(255,255,255,0.95),0 -1.5px 0 rgba(122,6,21,0.22)"></div>
+    <svg width="110" height="110" viewBox="0 0 48 48" fill="none" stroke="#7A3B43" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" style="position:relative;overflow:visible"><path d="M13 27l11-19 11 19-11 13z"></path><path d="M24 8v13"></path><circle cx="24" cy="24" r="2.5"></circle><path d="M17 44h14"></path><path d="M40 5v7M36.5 8.5h7"></path></svg>
+  </div>
+  <div style="position:absolute;left:760px;top:796px;width:440px;display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center">
+    <div style="font-weight:700;font-size:44px;line-height:1.1;white-space:nowrap">Claude Design</div>
+    <div style="font-size:26px;line-height:1.25;color:#5F5B55">Designs it · shares as an artifact</div>
+  </div>
+
+  <div style="position:absolute;left:1230px;top:330px;width:616px;border:1px solid #E4E2DF;border-radius:10px;background:#FFFFFF;box-shadow:0 26px 50px -24px rgba(28,27,25,0.32)">
+    <div style="height:40px;box-sizing:border-box;padding:0 14px;display:flex;align-items:center;gap:7px;background:#F4F2EF;border-bottom:1px solid #E4E2DF;border-radius:10px 10px 0 0">
+      <div style="width:10px;height:10px;border-radius:50%;background:#E4E2DF"></div>
+      <div style="width:10px;height:10px;border-radius:50%;background:#E4E2DF"></div>
+      <div style="width:10px;height:10px;border-radius:50%;background:#E4E2DF"></div>
+      <div style="margin-left:16px;flex:1;position:relative;height:24px;border-radius:12px;background:#FFFFFF;border:1px solid #E4E2DF;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:15px;line-height:24px">
+        <div style="position:absolute;left:14px;top:0;color:#8A867F;white-space:nowrap;opacity:{{ url0 }};transition:opacity 0.4s ease">claude.site/artifacts/…</div>
+        <div style="position:absolute;left:14px;top:0;color:#5F5B55;white-space:nowrap;opacity:{{ url1 }};transition:opacity 0.4s ease">yourname.github.io</div>
+        <div style="position:absolute;left:14px;top:0;color:#1C1B19;font-weight:700;white-space:nowrap;opacity:{{ url2 }};transition:opacity 0.4s ease">dipesh.design</div>
+      </div>
+    </div>
+    <div style="position:relative;width:616px;height:284px;overflow:hidden;border-radius:0 0 10px 10px;background:#FAF8F5">
+      <div style="position:absolute;left:5%;top:11%;width:22%;height:12%;border-radius:3px;background:#ECEAE6"></div>
+      <div style="position:absolute;left:5%;top:27%;width:27%;height:12%;border-radius:3px;background:#ECEAE6"></div>
+      <div style="position:absolute;left:5%;top:51%;width:18%;height:3.4%;border-radius:2px;background:#ECEAE6"></div>
+      <div style="position:absolute;left:5%;top:56.5%;width:18%;height:3.4%;border-radius:2px;background:#ECEAE6"></div>
+      <div style="position:absolute;left:5%;top:62%;width:15%;height:3.4%;border-radius:2px;background:#F6D9DE"></div>
+      <div style="position:absolute;left:64%;top:19%;width:19%;height:51%;border-radius:2px;background:#ECEAE6"></div>
+      <img src="assets/website.png" alt="Claude-designed academic website" style="position:absolute;left:0;top:0;width:616px;height:auto;display:block;opacity:{{ siteOn5 }};transform:scale({{ siteScale5 }});transform-origin:50% 50%;transition:opacity 0.7s ease,transform 0.9s cubic-bezier(.2,.8,.2,1)">
+    </div>
+  </div>
+
+  <div style="position:absolute;left:1372px;top:694px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:17.9px;letter-spacing:0.135em;line-height:1;color:#B5091F;white-space:nowrap">FOR A CUSTOM ADDRESS</div>
+  <div style="position:absolute;left:1484px;top:796px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:17.9px;letter-spacing:0.135em;line-height:1;color:#8A867F;white-space:nowrap">THEN</div>
+  <div style="position:absolute;left:1280px;top:760px;width:120px;height:120px;box-sizing:border-box;border-radius:50%;border:2.5px dashed #C98A93;display:flex;align-items:center;justify-content:center">
+    <div style="position:absolute;inset:0;border-radius:50%;background:linear-gradient(145deg,#FFFFFF 0%,#FFFFFF 45%,#FBEFF1 100%);animation:{{ ghSpin5 }}"></div>
+    <div style="position:absolute;inset:0;border-radius:50%;background:linear-gradient(150deg,rgba(255,255,255,0.75) 0%,rgba(255,255,255,0) 38%,rgba(28,27,25,0) 62%,rgba(28,27,25,0.1) 100%)"></div>
+    <div style="position:absolute;inset:11px;border-radius:50%;background:radial-gradient(circle at 50% 35%,rgba(255,255,255,0.35) 0%,rgba(255,255,255,0) 70%);box-shadow:inset 0 7px 11px -2px rgba(28,27,25,0.18),inset 0 -5px 8px -2px rgba(255,255,255,0.9),inset 0 0 0 1px rgba(28,27,25,0.1),0 1.5px 0 rgba(255,255,255,0.95),0 -1.5px 0 rgba(28,27,25,0.1)"></div>
+    <svg width="56" height="56" viewBox="0 0 48 48" fill="none" stroke="#1C1B19" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" style="position:relative"><circle cx="15" cy="10" r="4"></circle><circle cx="15" cy="38" r="4"></circle><circle cx="34" cy="17" r="4"></circle><path d="M15 14v20"></path><path d="M34 21c0 8-7 9-15.5 14"></path></svg>
+  </div>
+  <div style="position:absolute;left:1170px;top:900px;width:340px;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center">
+    <div style="font-weight:700;font-size:34px;line-height:1.1;white-space:nowrap">GitHub Pages</div>
+    <div style="font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:24px;line-height:1;color:#5F5B55;white-space:nowrap">Free host</div>
+  </div>
+  <div style="position:absolute;left:1640px;top:760px;width:120px;height:120px;box-sizing:border-box;border-radius:50%;border:2.5px dashed #C98A93;display:flex;align-items:center;justify-content:center">
+    <div style="position:absolute;inset:0;border-radius:50%;background:linear-gradient(145deg,#FFFFFF 0%,#FFFFFF 45%,#FBEFF1 100%);animation:{{ domSpin5 }}"></div>
+    <div style="position:absolute;inset:0;border-radius:50%;background:linear-gradient(150deg,rgba(255,255,255,0.75) 0%,rgba(255,255,255,0) 38%,rgba(28,27,25,0) 62%,rgba(28,27,25,0.1) 100%)"></div>
+    <div style="position:absolute;inset:11px;border-radius:50%;background:radial-gradient(circle at 50% 35%,rgba(255,255,255,0.35) 0%,rgba(255,255,255,0) 70%);box-shadow:inset 0 7px 11px -2px rgba(28,27,25,0.18),inset 0 -5px 8px -2px rgba(255,255,255,0.9),inset 0 0 0 1px rgba(28,27,25,0.1),0 1.5px 0 rgba(255,255,255,0.95),0 -1.5px 0 rgba(28,27,25,0.1)"></div>
+    <svg width="56" height="56" viewBox="0 0 48 48" fill="none" stroke="#1C1B19" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" style="position:relative"><circle cx="24" cy="24" r="17"></circle><ellipse cx="24" cy="24" rx="7" ry="17"></ellipse><path d="M7 24h34M10 15h28M10 33h28"></path></svg>
+  </div>
+  <div style="position:absolute;left:1530px;top:900px;width:340px;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center">
+    <div style="font-weight:700;font-size:34px;line-height:1.1;white-space:nowrap">Personal domain</div>
+    <div style="font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:24px;line-height:1;color:#5F5B55;white-space:nowrap">e.g. dipesh.design</div>
+  </div>
+
+  <div style="position:absolute;left:0;top:1046px;width:1920px;height:34px;background:#B5091F"></div>
+  <div style="position:absolute;left:74px;bottom:10px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:19.9px;letter-spacing:0.08em;line-height:1;white-space:nowrap;color:#FFFFFF;text-box:trim-both cap alphabetic">GFCB AI WORKSHOP SERIES</div>
+  <div style="position:absolute;left:1326px;bottom:12px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:17.9px;line-height:1;white-space:nowrap;color:#FFFFFF;text-box:trim-both cap alphabetic">Gordon Ford College of Business · Western Kentucky University</div>
+</section>
+
+<section data-label="Resources" data-screen-label="06 Resources" data-speaker-notes="Everything you need to follow along: a sample CV, images, the instruction file, and the prompt." style="background:#FFFFFF;overflow:hidden;font-family:'TeXGyrePagella','TeX Gyre Pagella','Palatino Linotype',Palatino,'Book Antiqua',serif;color:#1C1B19">
+  <div style="position:absolute;left:73px;top:110px;width:46px;height:1.8px;border-radius:1px;background:#B5091F"></div>
+  <div style="position:absolute;left:134px;bottom:963px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:17.9px;letter-spacing:0.135em;line-height:1;white-space:nowrap;color:#B5091F;text-box:trim-both cap alphabetic">WORKSHOP 01</div>
+  <div style="position:absolute;left:70px;bottom:868px;font-weight:700;font-size:76px;line-height:1;white-space:nowrap;text-box:trim-both cap alphabetic">Resources</div>
+  <div style="position:absolute;left:0;top:250px;width:1920px;height:1.8px;background:#E4E2DF"></div>
+  <div style="position:absolute;left:956px;top:247px;width:8px;height:8px;border-radius:50%;background:#F6D9DE"></div>
+
+  <div style="position:absolute;left:74px;top:306px;width:120px;height:120px;box-sizing:border-box;border-radius:50%;border:2.5px solid #C98A93;display:flex;align-items:center;justify-content:center">
+    <div style="position:absolute;inset:0;border-radius:50%;background:linear-gradient(145deg,#FFFFFF 0%,#F6D9DE 55%,#EDB9C2 100%)"></div>
+    <div style="position:absolute;inset:0;border-radius:50%;background:linear-gradient(150deg,rgba(255,255,255,0.75) 0%,rgba(255,255,255,0) 38%,rgba(122,6,21,0) 62%,rgba(122,6,21,0.22) 100%)"></div>
+    <div style="position:absolute;inset:11px;border-radius:50%;background:radial-gradient(circle at 50% 35%,rgba(255,255,255,0.35) 0%,rgba(255,255,255,0) 70%);box-shadow:inset 0 7px 11px -2px rgba(122,6,21,0.38),inset 0 -5px 8px -2px rgba(255,255,255,0.9),inset 0 0 0 1px rgba(122,6,21,0.18),0 1.5px 0 rgba(255,255,255,0.95),0 -1.5px 0 rgba(122,6,21,0.22)"></div>
+    <svg width="54" height="54" viewBox="0 0 48 48" fill="none" stroke="#7A3B43" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" style="position:relative"><path d="M12 6h17l9 9v27H12z"></path><path d="M29 6v9h9"></path><circle cx="21" cy="20" r="4"></circle><path d="M14.5 31c1.5-3.5 3.8-5 6.5-5s5 1.5 6.5 5"></path><path d="M17 37h16"></path></svg>
+  </div>
+  <div style="position:absolute;left:226px;top:326px;width:660px;display:flex;flex-direction:column;align-items:flex-start;gap:12px">
+    <div style="font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:17.9px;letter-spacing:0.135em;line-height:1;color:#1C1B19;white-space:nowrap">CV / RESUME</div>
+    <div style="margin-top:6px;display:flex;flex-wrap:wrap;gap:12px"><a href="assets/Dipesh-Bhattarai-CV.pdf" download="" target="_blank" style="display:flex;align-items:center;gap:10px;padding:12px 20px;border:1.8px solid #1C1B19;border-radius:30px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:18px;letter-spacing:0.1em;line-height:1;color:#1C1B19;text-decoration:none;white-space:nowrap;transition:background 0.2s ease,color 0.2s ease" style-hover="background:#1C1B19;color:#FFFFFF">DOWNLOAD CV · PDF<span>↓</span></a></div>
+  </div>
+  <div style="position:absolute;left:74px;top:536px;width:812px;height:1.4px;background:#E4E2DF"></div>
+  <div style="position:absolute;left:74px;top:566px;width:120px;height:120px;box-sizing:border-box;border-radius:50%;border:2.5px solid #C98A93;display:flex;align-items:center;justify-content:center">
+    <div style="position:absolute;inset:0;border-radius:50%;background:linear-gradient(145deg,#FFFFFF 0%,#F6D9DE 55%,#EDB9C2 100%)"></div>
+    <div style="position:absolute;inset:0;border-radius:50%;background:linear-gradient(150deg,rgba(255,255,255,0.75) 0%,rgba(255,255,255,0) 38%,rgba(122,6,21,0) 62%,rgba(122,6,21,0.22) 100%)"></div>
+    <div style="position:absolute;inset:11px;border-radius:50%;background:radial-gradient(circle at 50% 35%,rgba(255,255,255,0.35) 0%,rgba(255,255,255,0) 70%);box-shadow:inset 0 7px 11px -2px rgba(122,6,21,0.38),inset 0 -5px 8px -2px rgba(255,255,255,0.9),inset 0 0 0 1px rgba(122,6,21,0.18),0 1.5px 0 rgba(255,255,255,0.95),0 -1.5px 0 rgba(122,6,21,0.22)"></div>
+    <svg width="54" height="54" viewBox="0 0 48 48" fill="none" stroke="#7A3B43" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" style="position:relative"><rect x="6" y="10" width="36" height="28" rx="3"></rect><circle cx="32" cy="19" r="3"></circle><path d="M6 33l10-10 9 9 5-5 12 12"></path></svg>
+  </div>
+  <div style="position:absolute;left:226px;top:586px;width:660px;display:flex;flex-direction:column;align-items:flex-start;gap:12px">
+    <div style="font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:17.9px;letter-spacing:0.135em;line-height:1;color:#1C1B19;white-space:nowrap">IMAGES</div>
+    <div style="margin-top:6px;display:flex;flex-wrap:wrap;gap:12px"><a href="assets/headshot.png" download="" target="_blank" style="display:flex;align-items:center;gap:10px;padding:12px 20px;border:1.8px solid #1C1B19;border-radius:30px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:18px;letter-spacing:0.1em;line-height:1;color:#1C1B19;text-decoration:none;white-space:nowrap;transition:background 0.2s ease,color 0.2s ease" style-hover="background:#1C1B19;color:#FFFFFF">HEADSHOT<span>↓</span></a><a href="assets/building.png" download="" target="_blank" style="display:flex;align-items:center;gap:10px;padding:12px 20px;border:1.8px solid #1C1B19;border-radius:30px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:18px;letter-spacing:0.1em;line-height:1;color:#1C1B19;text-decoration:none;white-space:nowrap;transition:background 0.2s ease,color 0.2s ease" style-hover="background:#1C1B19;color:#FFFFFF">BUILDING.PNG<span>↓</span></a></div>
+  </div>
+  <div style="position:absolute;left:74px;top:796px;width:812px;height:1.4px;background:#E4E2DF"></div>
+  <div style="position:absolute;left:74px;top:826px;width:120px;height:120px;box-sizing:border-box;border-radius:50%;border:2.5px solid #C98A93;display:flex;align-items:center;justify-content:center">
+    <div style="position:absolute;inset:0;border-radius:50%;background:linear-gradient(145deg,#FFFFFF 0%,#F6D9DE 55%,#EDB9C2 100%)"></div>
+    <div style="position:absolute;inset:0;border-radius:50%;background:linear-gradient(150deg,rgba(255,255,255,0.75) 0%,rgba(255,255,255,0) 38%,rgba(122,6,21,0) 62%,rgba(122,6,21,0.22) 100%)"></div>
+    <div style="position:absolute;inset:11px;border-radius:50%;background:radial-gradient(circle at 50% 35%,rgba(255,255,255,0.35) 0%,rgba(255,255,255,0) 70%);box-shadow:inset 0 7px 11px -2px rgba(122,6,21,0.38),inset 0 -5px 8px -2px rgba(255,255,255,0.9),inset 0 0 0 1px rgba(122,6,21,0.18),0 1.5px 0 rgba(255,255,255,0.95),0 -1.5px 0 rgba(122,6,21,0.22)"></div>
+    <svg width="54" height="54" viewBox="0 0 48 48" fill="none" stroke="#7A3B43" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" style="position:relative"><path d="M12 6h17l9 9v27H12z"></path><path d="M29 6v9h9"></path><path d="M17 22l2 2 4-4"></path><path d="M27 22h6"></path><path d="M17 32l2 2 4-4"></path><path d="M27 32h6"></path></svg>
+  </div>
+  <div style="position:absolute;left:226px;top:846px;width:660px;display:flex;flex-direction:column;align-items:flex-start;gap:12px">
+    <div style="font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:17.9px;letter-spacing:0.135em;line-height:1;color:#1C1B19;white-space:nowrap">INSTRUCTION FILE</div>
+    <div style="margin-top:6px;display:flex;flex-wrap:wrap;gap:12px"><a href="assets/SKILL.md" download="SKILL.md" target="_blank" style="display:flex;align-items:center;gap:10px;padding:12px 20px;border:1.8px solid #1C1B19;border-radius:30px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:18px;letter-spacing:0.1em;line-height:1;color:#1C1B19;text-decoration:none;white-space:nowrap;transition:background 0.2s ease,color 0.2s ease" style-hover="background:#1C1B19;color:#FFFFFF">SKILL.MD<span>↓</span></a></div>
+  </div>
+
+  <div style="position:absolute;left:1010px;top:306px;width:836px;height:700px;box-sizing:border-box;border:1px solid #E4E2DF;border-radius:14px;background:#FAF8F5;box-shadow:0 26px 50px -28px rgba(28,27,25,0.28);display:flex;flex-direction:column">
+    <div style="height:72px;box-sizing:border-box;padding:0 28px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #E4E2DF">
+      <div style="font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:17.9px;letter-spacing:0.135em;line-height:1;color:#1C1B19;white-space:nowrap">PROMPT</div>
+      <button onClick="{{ copyPrompt }}" style="display:flex;align-items:center;gap:10px;padding:10px 18px;border:1.8px solid #1C1B19;border-radius:30px;background:#FFFFFF;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:17px;letter-spacing:0.1em;line-height:1;color:#1C1B19;cursor:pointer;transition:background 0.2s ease,color 0.2s ease" style-hover="background:#1C1B19;color:#FFFFFF">{{ copyLabel }}</button>
+    </div>
+    <div ref="{{ setPromptEl }}" style="flex:1;padding:36px 40px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:30px;line-height:1.45;color:#1C1B19;white-space:pre-wrap;overflow:auto">Use the skill.md to understand the design framework. I also have the image. Use the light theme. Create the best academic website design. I have also added building.png — use that as the background (transparent) of the website. Make it professional.</div>
+  </div>
+
+  <div style="position:absolute;left:0;top:1046px;width:1920px;height:34px;background:#B5091F"></div>
+  <div style="position:absolute;left:74px;bottom:10px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:19.9px;letter-spacing:0.08em;line-height:1;white-space:nowrap;color:#FFFFFF;text-box:trim-both cap alphabetic">GFCB AI WORKSHOP SERIES</div>
+  <div style="position:absolute;left:1326px;bottom:12px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:17.9px;line-height:1;white-space:nowrap;color:#FFFFFF;text-box:trim-both cap alphabetic">Gordon Ford College of Business · Western Kentucky University</div>
+</section>
+
+
+<section data-label="Thank you" data-screen-label="07 Thank you" data-speaker-notes="Thank you. Questions? Reach out to any member of the GFCB AI Committee." style="background:#FFFFFF;overflow:hidden;font-family:'TeXGyrePagella','TeX Gyre Pagella','Palatino Linotype',Palatino,'Book Antiqua',serif;color:#1C1B19">
+  <img src="assets/building.png" alt="Chandler Hall illustration" style="position:absolute;left:385px;top:20px;width:1502px;height:693px;opacity:0.95">
+  <div style="position:absolute;left:382px;top:17px;width:456px;height:699px;background:linear-gradient(to right,#FFFFFF,rgba(255,255,255,0))"></div>
+  <div style="position:absolute;left:382px;top:577px;width:1508px;height:139px;background:linear-gradient(to bottom,rgba(255,255,255,0),#FFFFFF)"></div>
+
+  <div style="position:absolute;left:65px;bottom:783px;font-weight:700;font-size:111.6px;line-height:1;white-space:nowrap;color:#B5091F;text-box:trim-both cap alphabetic">Thank</div>
+  <div style="position:absolute;left:65px;bottom:667px;font-weight:700;font-size:111.6px;line-height:1;white-space:nowrap;text-box:trim-both cap alphabetic">You</div>
+
+  <div style="position:absolute;left:0;top:580px;width:1920px;height:1.8px;background:#E4E2DF"></div>
+  <div style="position:absolute;left:956px;top:577px;width:8px;height:8px;border-radius:50%;background:#F6D9DE"></div>
+
+  <div style="position:absolute;left:73px;top:665px;width:46px;height:1.8px;border-radius:1px;background:#B5091F"></div>
+  <div style="position:absolute;left:134px;bottom:407px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:17.9px;letter-spacing:0.135em;line-height:1;white-space:nowrap;color:#B5091F;text-box:trim-both cap alphabetic">WORKSHOP 01</div>
+  <div style="position:absolute;left:74px;bottom:334px;font-weight:700;font-size:59.8px;line-height:1;white-space:nowrap;text-box:trim-both cap alphabetic">Creating a Professional Website</div>
+
+  <div style="position:absolute;left:1224px;top:652px;width:1.4px;height:266px;background:#E4E2DF"></div>
+
+  <div style="position:absolute;left:1292px;top:665px;width:46px;height:1.8px;border-radius:1px;background:#B5091F"></div>
+  <div style="position:absolute;left:1352px;bottom:407px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:17.9px;letter-spacing:0.135em;line-height:1;white-space:nowrap;color:#B5091F;text-box:trim-both cap alphabetic">PRESENTED BY</div>
+  <div style="position:absolute;left:1292px;bottom:340px;font-weight:700;font-size:33.9px;line-height:1;white-space:nowrap;text-box:trim-both cap alphabetic">GFCB AI Committee</div>
+  <div style="position:absolute;left:1292px;top:770px;width:554px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:24px;row-gap:16px">
+    <div style="display:flex;align-items:center;gap:14px"><div style="flex:none;width:14px;height:14px;border-radius:50%;background:#F6D9DE;display:flex;align-items:center;justify-content:center"><div style="width:5px;height:5px;border-radius:50%;background:#B5091F"></div></div><div style="font-size:26px;line-height:1.1;white-space:nowrap">Dipesh Bhattarai</div></div>
+    <div style="display:flex;align-items:center;gap:14px"><div style="flex:none;width:14px;height:14px;border-radius:50%;background:#F6D9DE;display:flex;align-items:center;justify-content:center"><div style="width:5px;height:5px;border-radius:50%;background:#B5091F"></div></div><div style="font-size:26px;line-height:1.1;white-space:nowrap">John Hostetter</div></div>
+    <div style="display:flex;align-items:center;gap:14px"><div style="flex:none;width:14px;height:14px;border-radius:50%;background:#F6D9DE;display:flex;align-items:center;justify-content:center"><div style="width:5px;height:5px;border-radius:50%;background:#B5091F"></div></div><div style="font-size:26px;line-height:1.1;white-space:nowrap">John Erickson</div></div>
+    <div style="display:flex;align-items:center;gap:14px"><div style="flex:none;width:14px;height:14px;border-radius:50%;background:#F6D9DE;display:flex;align-items:center;justify-content:center"><div style="width:5px;height:5px;border-radius:50%;background:#B5091F"></div></div><div style="font-size:26px;line-height:1.1;white-space:nowrap">Wu Tong</div></div>
+    <div style="display:flex;align-items:center;gap:14px"><div style="flex:none;width:14px;height:14px;border-radius:50%;background:#F6D9DE;display:flex;align-items:center;justify-content:center"><div style="width:5px;height:5px;border-radius:50%;background:#B5091F"></div></div><div style="font-size:26px;line-height:1.1;white-space:nowrap">Peter Lin</div></div>
+    <div style="display:flex;align-items:center;gap:14px"><div style="flex:none;width:14px;height:14px;border-radius:50%;background:#F6D9DE;display:flex;align-items:center;justify-content:center"><div style="width:5px;height:5px;border-radius:50%;background:#B5091F"></div></div><div style="font-size:26px;line-height:1.1;white-space:nowrap">Patricia Todd</div></div>
+    <div style="display:flex;align-items:center;gap:14px"><div style="flex:none;width:14px;height:14px;border-radius:50%;background:#F6D9DE;display:flex;align-items:center;justify-content:center"><div style="width:5px;height:5px;border-radius:50%;background:#B5091F"></div></div><div style="font-size:26px;line-height:1.1;white-space:nowrap">Mariah Yates</div></div>
+  </div>
+
+  <div style="position:absolute;left:0;top:1046px;width:1920px;height:34px;background:#B5091F"></div>
+  <div style="position:absolute;left:74px;bottom:10px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:19.9px;letter-spacing:0.08em;line-height:1;white-space:nowrap;color:#FFFFFF;text-box:trim-both cap alphabetic">GFCB AI WORKSHOP SERIES</div>
+  <div style="position:absolute;left:1326px;bottom:12px;font-family:'TeXGyreHeros','TeX Gyre Heros','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:17.9px;line-height:1;white-space:nowrap;color:#FFFFFF;text-box:trim-both cap alphabetic">Gordon Ford College of Business · Western Kentucky University</div>
+</section>
+
+</x-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;revealStart&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:0,&quot;min&quot;:0,&quot;max&quot;:100,&quot;step&quot;:1,&quot;unit&quot;:&quot;%&quot;,&quot;tsType&quot;:&quot;number&quot;},&quot;showHint&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;}}">
+class Component extends DCLogic {
+  state = { pct: null };
+  area = null;
+  drag = false;
+  setPct(e) {
+    if (!this.area) return;
+    const r = this.area.getBoundingClientRect();
+    const p = Math.max(0, Math.min(100, ((e.clientX - r.left) / r.width) * 100));
+    this.setState({ pct: p });
+  }
+  animateTo(target) {
+    cancelAnimationFrame(this.raf);
+    const from = this.cur(), t0 = performance.now(), dur = 900;
+    const step = (t) => {
+      const k = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - k, 3);
+      this.setState({ pct: from + (target - from) * e });
+      if (k < 1) this.raf = requestAnimationFrame(step);
+    };
+    this.raf = requestAnimationFrame(step);
+  }
+  cur() { return this.state.pct ?? this.props.revealStart ?? 0; }
+  componentDidMount() {
+    this.t0 = performance.now();
+    this.onSlide = () => { this.t0 = performance.now(); this.phKey = null; this.setState(s => ({ runKey: (s.runKey || 0) + 1 })); };
+    document.addEventListener('slidechange', this.onSlide);
+    const tick = () => {
+      const el = (performance.now() - this.t0) / 1000;
+      const t = el % 9, u = el % 11;
+      const ph = {
+        inS: t < 1.7, hub: t >= 1.5 && t < 3.0, site: t >= 3.5, dom: t >= 4.9 && t < 6.1, custom: t >= 6.0,
+        inS5: u < 1.7, hub5: u >= 1.5 && u < 3.0, site5: u >= 3.5, gh5: u >= 5.3 && u < 6.5, dom5: u >= 7.7 && u < 8.9,
+        url5: u >= 8.0 ? 2 : u >= 5.9 ? 1 : 0,
+      };
+      const k = JSON.stringify(ph);
+      if (k !== this.phKey) { this.phKey = k; this.setState({ ph }); }
+      this.loop = requestAnimationFrame(tick);
+    };
+    this.loop = requestAnimationFrame(tick);
+  }
+  buildFlow(id = 'rm', T = 9, extra = [['M1296 814 L1296 656', 4.9, 6.0]]) {
+    const pc = s => (s / T * 100).toFixed(2) + '%';
+    const segs = [
+      ['M556 450 C720 450 700 640 860 640', 0.2, 1.4],
+      ['M556 640 L860 640', 0.35, 1.45],
+      ['M556 830 C720 830 700 640 860 640', 0.5, 1.7],
+      ['M1100 640 C1170 640 1160 492 1230 492', 2.5, 3.5],
+      ...extra,
+    ];
+    const fade = T - 0.7;
+    const ease = 'animation-timing-function:cubic-bezier(.45,0,.55,1)';
+    let css = '';
+    segs.forEach(([, s, e], i) => {
+      css += `@keyframes ${id}Draw${i}{0%,${pc(s)}{stroke-dashoffset:1;opacity:1;${ease}}${pc(e)}{stroke-dashoffset:0;opacity:1}${pc(fade)}{stroke-dashoffset:0;opacity:1}100%{stroke-dashoffset:0;opacity:0}}`;
+      css += `@keyframes ${id}Dot${i}{0%,${pc(s)}{offset-distance:0%;opacity:0;${ease}}${pc(s + 0.12)}{opacity:1}${pc(e - 0.12)}{opacity:1}${pc(e)}{offset-distance:100%;opacity:0}100%{offset-distance:100%;opacity:0}}`;
+    });
+    const h = React.createElement;
+    return h('div', { key: id + (this.state.runKey || 0), style: { position: 'absolute', left: 0, top: 0, width: 1920, height: 1080, pointerEvents: 'none' } },
+      h('style', null, css),
+      h('svg', { width: 1920, height: 1080, viewBox: '0 0 1920 1080', fill: 'none', style: { position: 'absolute', left: 0, top: 0 } },
+        segs.map(([d], i) => h('path', { key: i, d, pathLength: 1, stroke: '#B5091F', strokeWidth: 3, strokeLinecap: 'round', strokeDasharray: '1 1', style: { strokeDashoffset: 1, animation: `${id}Draw${i} ${T}s linear infinite` } }))),
+      segs.map(([d], i) => h('div', { key: 'd' + i, style: { position: 'absolute', left: 0, top: 0, width: 18, height: 18, boxSizing: 'border-box', borderRadius: '50%', background: '#B5091F', border: '3.5px solid #FFFFFF', boxShadow: '0 0 0 1.5px #B5091F, 0 4px 10px rgba(181,9,31,0.45)', offsetPath: `path('${d}')`, offsetRotate: '0deg', opacity: 0, animation: `${id}Dot${i} ${T}s linear infinite` } })));
+  }
+  componentWillUnmount() { cancelAnimationFrame(this.raf); cancelAnimationFrame(this.loop); document.removeEventListener('slidechange', this.onSlide); }
+  renderVals() {
+    const pct = this.cur();
+    const hv = this.state.hover;
+    const on = (i, v) => (hv === i ? v : 'none');
+    const draw = (d, dur, delay = 0) => `dcDraw ${dur}s cubic-bezier(.4,0,.2,1) ${delay}s both`;
+    const hover = {};
+    for (let i = 1; i <= 7; i++) {
+      hover['enter' + i] = () => this.setState({ hover: i });
+      hover['sp' + i] = on(i, 'dcGrad 3s linear infinite');
+    }
+    const ph = this.state.ph || {};
+    const spin = 'dcGrad 2s linear infinite';
+    return {
+      ...hover,
+      flow: this.buildFlow(),
+      setPromptEl: (el) => { this.promptEl = el; },
+      copyLabel: this.state.copied ? 'COPIED ✓' : 'COPY PROMPT',
+      copyPrompt: () => {
+        const txt = this.promptEl ? this.promptEl.innerText : '';
+        const done = () => { this.setState({ copied: true }); clearTimeout(this.cpT); this.cpT = setTimeout(() => this.setState({ copied: false }), 1600); };
+        if (navigator.clipboard) navigator.clipboard.writeText(txt).then(done, done); else done();
+      },
+      flow5: this.buildFlow('cl', 11, [['M1340 656 L1340 760', 4.6, 5.5], ['M1400 820 L1640 820', 6.8, 7.8]]),
+      inSpin5: ph.inS5 ? spin : 'none',
+      hubSpin5: ph.hub5 ? spin : 'none',
+      ghSpin5: ph.gh5 ? spin : 'none',
+      domSpin5: ph.dom5 ? spin : 'none',
+      hubGlow5: ph.hub5 ? 1 : 0,
+      hubGlowScale5: ph.hub5 ? 1.06 : 0.94,
+      siteOn5: ph.site5 ? 1 : 0,
+      siteScale5: ph.site5 ? 1 : 1.04,
+      url0: (ph.url5 || 0) === 0 ? 1 : 0,
+      url1: ph.url5 === 1 ? 1 : 0,
+      url2: ph.url5 === 2 ? 1 : 0,
+      inSpin: ph.inS ? spin : 'none',
+      hubSpin: ph.hub ? spin : 'none',
+      domSpin: ph.dom ? spin : 'none',
+      hubGlow: ph.hub ? 1 : 0,
+      hubGlowScale: ph.hub ? 1.06 : 0.94,
+      siteOn: ph.site ? 1 : 0,
+      siteScale: ph.site ? 1 : 1.04,
+      urlA: ph.custom ? 0 : 1,
+      urlB: ph.custom ? 1 : 0,
+      leave: () => this.setState({ hover: null }),
+      a1: on(1, 'dcBob 1.4s ease-in-out infinite'),
+      a1b: on(1, draw(16, 0.7, 0.1)),
+      a2: on(2, draw(9, 0.45, 0.05)),
+      a2b: on(2, draw(9, 0.45, 0.35)),
+      a3: on(3, 'dcRise 1.8s ease-in-out infinite'),
+      a4: on(4, 'dcPop 0.6s cubic-bezier(.2,.8,.2,1)'),
+      a4b: on(4, draw(11, 0.35, 0.15)),
+      a4c: on(4, draw(11, 0.35, 0.35)),
+      a4d: on(4, draw(11, 0.35, 0.55)),
+      a5: on(5, 'dcTilt 1.6s ease-in-out infinite'),
+      a5b: on(5, 'dcTwinkle 1.2s ease-in-out infinite'),
+      a5c: on(5, draw(14, 0.8, 0.1)),
+      a6: on(6, draw(24, 0.7, 0)),
+      a6b: on(6, 'dcPulse 0.5s ease-out 0.6s'),
+      a7: on(7, 'dcSpin 2.4s cubic-bezier(.45,0,.55,1) infinite'),
+      coverClip: `inset(0 0 0 ${pct}%)`,
+      handleLeft: `${pct}%`,
+      showHint: (this.props.showHint ?? true) && pct < 4,
+      setArea: (el) => { this.area = el; },
+      onDown: (e) => { cancelAnimationFrame(this.raf); this.drag = true; e.currentTarget.setPointerCapture(e.pointerId); this.setPct(e); },
+      onMove: (e) => { if (this.drag) this.setPct(e); },
+      onUp: () => { this.drag = false; },
+      onToggle: () => this.animateTo(this.cur() > 50 ? 0 : 100),
+    };
+  }
+}
+</script>
+</body>
+</html>
